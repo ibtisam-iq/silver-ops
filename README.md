@@ -1,40 +1,111 @@
-# 🏆 SilverOps: A Silver Medalist’s Journey – DevOps & AIOps Portfolio
+# 🥈 SilverOps
 
-## Abstract
-**SilverOps** is a repository showcasing expertise in **DevOps methodologies** and **AI-driven automation**. The name "SilverOps" reflects my achievement as a **Silver Medalist**, symbolizing excellence and innovation in technology.
+> DevOps Portfolio by **Muhammad Ibtisam** | Silver Medalist
 
-## 1. Introduction
-**SilverOps** is a curated collection of projects demonstrating **DevOps** and **AIOps** implementations. It aims to:
+A curated showcase of production-grade DevOps projects, tools, and achievements.
 
-- Exhibit technical proficiency in automation, cloud computing, and AI-integrated operations.
-- Provide a structured platform for project exploration and knowledge dissemination.
-- Serve as a professional portfolio for employers, collaborators, and researchers in DevOps and AI.
+## 🏆 Featured Projects
 
-## 2. Repository Taxonomy
-The repository is divided into two main domains:
+### 🐛 [DebugBox](https://github.com/ibtisam-iq/debugbox)
+> Multi-variant Docker debugging toolkit with 80+ networking and system tools
 
-### 2.1 DevOps
-Projects facilitating automation, CI/CD pipelines:
+**Problem Solved:** Debug containerized applications without bloating production images
 
-   - **FullStack Systems**: End-to-end deployment of multi-tier projects, emphasizing DevOps practices and automation.
-   - **Tool-Specific Implementations**: Projects categorized based on industry-standard tools such as **Jenkins, Docker, Kubernetes, Terraform**, and other infrastructure automation frameworks.
+**Highlights:**
 
-### 2.2 AI-driven Operations (AIOps) 
-Future research and implementation of **AI-powered automation**, focusing on predictive analytics, anomaly detection, and intelligent system monitoring.
+- 5 size variants (tiny → full)
+- Published to GHCR and Docker Hub
+- Production-grade CI/CD
+- Used in real-world environments
 
-## 3. Related Research: The Nectar Repository
-Parallel to **SilverOps**, I also maintain the [**Nectar**](https://github.com/ibtisam-iq/nectar) repository which is dedicated to **theoretical and empirical documentation**, including:
+**Tech Stack:** Docker, GitHub Actions, Multi-stage builds, Shell scripting
 
-- **Comprehensive DevOps documentation** outlining best practices.
-- **Cheat sheets, guides, and in-depth tool analysis**.
-- **A resource for continuous learning in automation, cloud technologies, and system orchestration**.
+**Status:** ✅ Active development
 
-While **SilverOps** focuses on **practical implementations and case studies**, **Nectar** serves as a **reference for theoretical constructs and best practices**.
+---
 
-## 📬 Get in Touch
+### 🛠️ [SilverStack](https://github.com/ibtisam-iq/silver-stack)
+> Production-grade DevOps toolkit
 
-<p align="left">
-<a href="https://linkedin.com/in/ibtisam-iq" target="blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-</p>
+**Purpose:** Daily-use infrastructure toolkit with production configs and automation
 
-Thank you for exploring **SilverOps**! Let's build the future of automation together! 🚀
+**Contains:**
+
+- Kubernetes manifests (CKA/CKAD reference)
+- Docker Compose stacks (Jenkins, monitoring, logging)
+- GitHub Actions workflows (iximiuz playground keeper)
+- Troubleshooting case studies (50+ documented fixes)
+- Rapid provisioning scripts
+
+**Highlights:**
+
+- Professional structure and documentation
+- Industry-standard practices
+- Continuously updated
+
+**Docs:** [bootstrap.ibtisam-iq.com](https://bootstrap.ibtisam-iq.com)
+
+---
+
+### 📚 [Nectar](https://github.com/ibtisam-iq/nectar)
+> Personal engineering knowledge base
+
+**Purpose:** Comprehensive DevOps documentation and learning resources
+
+**Live Site:** [nectar.ibtisam-iq.com](https://nectar.ibtisam-iq.com)
+
+**Contains:**
+- Tool guides and cheat sheets
+- Best practices documentation
+- Architecture diagrams
+- Technical notes and references
+
+---
+
+## 🎓 Certifications
+
+- **CKA** - Certified Kubernetes Administrator
+- **CKAD** - Certified Kubernetes Application Developer
+
+## 🏅 Achievements
+
+- 🥈 **Silver Medalist**
+- ⭐ Open-source contributor
+- 📝 Technical writer
+
+## 💼 Technical Expertise
+
+**Cloud & Infrastructure:**
+
+- AWS, GCP, Azure
+- Terraform, CloudFormation
+- Infrastructure as Code
+
+**Containers & Orchestration:**
+
+- Docker, Kubernetes
+- Helm, Kustomize
+- Service mesh (Istio, Linkerd)
+
+**CI/CD & Automation:**
+
+- Jenkins, GitHub Actions
+- GitLab CI, ArgoCD
+- Bash, Python scripting
+
+**Monitoring & Logging:**
+
+- Prometheus, Grafana
+- ELK Stack
+- CloudWatch, Datadog
+
+## 🌐 Online Presence
+
+- 🌍 Website: [ibtisam-iq.com](https://ibtisam-iq.com)
+- 💼 LinkedIn: [ibtisam-iq](https://linkedin.com/in/ibtisam-iq)
+- 🐙 GitHub: [ibtisam-iq](https://github.com/ibtisam-iq)
+- 📧 Email: [contact@ibtisam-iq.com]
+
+---
+
+**Built with 🥈 by Muhammad Ibtisam**
