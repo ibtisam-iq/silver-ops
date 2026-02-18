@@ -101,10 +101,9 @@ A curated showcase of production-grade DevOps projects, tools, and achievements.
 
 ## 🌐 Online Presence
 
-- 🌍 Website: [ibtisam-iq.com](https://ibtisam-iq.com)
-- 💼 LinkedIn: [ibtisam-iq](https://linkedin.com/in/ibtisam-iq)
-- 🐙 GitHub: [ibtisam-iq](https://github.com/ibtisam-iq)
-- 📧 Email: [contact@ibtisam-iq.com]
+- 🌍 [Website](https://ibtisam-iq.com)
+- 💼 [LinkedIn](https://linkedin.com/in/ibtisam-iq)
+- 📧 [Email](contact@ibtisam-iq.com)
 
 ---
 
