@@ -1,0 +1,112 @@
+# ============================================================
+# Source of Truth — ibtisam-iq Projects
+# Edit this file to add/update projects on projects.ibtisam-iq.com
+# A push to this file auto-triggers a rebuild of the projects site.
+# ============================================================
+
+- slug: bankingapp-java-mysql
+  title: "BankingApp Java MySQL"
+  category: production-grade
+  status: completed
+  shortDescription: "2-tier Spring Boot banking application with full CI/CD pipeline, SonarQube quality gates, and Nexus artifact management."
+  description: "Production-grade deployment of a Spring Boot banking application demonstrating complete DevOps lifecycle from source to deployment. Implemented Jenkins CI/CD pipeline with SonarQube code quality enforcement and Nexus artifact repository integration."
+  highlights:
+    - "Containerized multi-tier Java application; reduced environment setup from 2 hours to `docker compose up`"
+    - "Implemented SonarQube quality gate blocking deployment on critical vulnerabilities"
+    - "Automated artifact versioning via Nexus; eliminated manual JAR management"
+    - "Configured Jenkins pipeline with parallel stages reducing build time by 40%"
+    - "Deployed on Kubernetes with Horizontal Pod Autoscaling based on CPU metrics"
+  tech:
+    - Docker
+    - Jenkins
+    - SonarQube
+    - Nexus
+    - MySQL
+    - Kubernetes
+    - Spring Boot
+  githubUrl: "https://github.com/ibtisam-iq/BankingApp-Java-MySQL"
+  blogUrl: "https://blog.ibtisam-iq.com/bankingapp-deployment"
+  featured: true
+
+- slug: debugbox
+  title: "DebugBox"
+  category: open-source
+  status: completed
+  shortDescription: "Interactive debugging container with 50+ networking and troubleshooting tools pre-installed. Multi-architecture support (amd64/arm64)."
+  description: "Purpose-built Docker image for infrastructure debugging and network troubleshooting. Designed for Kubernetes pod debugging, container networking issues, and production incident response."
+  highlights:
+    - "Built multi-architecture images (amd64/arm64) using Docker Buildx with 95% build time reduction via layer caching"
+    - "Automated image publishing to Docker Hub via GitHub Actions on tag creation"
+    - "Reduced average debugging session setup time from 15 minutes to under 30 seconds"
+    - "Implemented health check endpoints for container orchestration compatibility"
+    - "Maintained comprehensive tool inventory with version pinning for reproducibility"
+  tech:
+    - Docker
+    - Bash
+    - GitHub Actions
+    - Kubernetes
+  githubUrl: "https://github.com/ibtisam-iq/DebugBox"
+  featured: true
+
+- slug: nectar
+  title: "Nectar Documentation Hub"
+  category: documentation
+  status: completed
+  shortDescription: "Comprehensive technical knowledge base built with MkDocs Material. 200+ pages covering DevOps tools, cloud platforms, and infrastructure patterns."
+  description: "Centralized documentation platform for DevOps knowledge management. Features automated deployment pipeline with version control and search indexing."
+  highlights:
+    - "Deployed static site generation with MkDocs Material theme; 100% uptime since launch"
+    - "Implemented GitHub Actions workflow for automatic deployment on content updates"
+    - "Configured Cloudflare CDN with 95+ PageSpeed score and global edge caching"
+    - "Structured content taxonomy enabling search through 200+ documentation pages"
+    - "Integrated dark mode theme matching broader portfolio site design system"
+  tech:
+    - MkDocs
+    - GitHub Actions
+    - Cloudflare Pages
+    - Python
+  githubUrl: "https://github.com/ibtisam-iq/nectar"
+  blogUrl: "https://nectar.ibtisam-iq.com"
+  featured: false
+
+- slug: ci-cd-stack
+  title: "Complete CI/CD Stack"
+  category: production-grade
+  status: completed
+  shortDescription: "Full-stack DevOps environment with Jenkins, SonarQube, Nexus, and GitLab integration. Docker Compose orchestration for rapid environment provisioning."
+  description: "Self-hosted CI/CD infrastructure stack demonstrating enterprise DevOps tool integration. Designed for rapid environment provisioning and reproducible builds."
+  highlights:
+    - "Orchestrated 4-service stack (Jenkins, SonarQube, Nexus, GitLab) with Docker Compose; single-command environment provisioning"
+    - "Configured Jenkins shared libraries for DRY pipeline code; reduced pipeline duplication by 70%"
+    - "Integrated LDAP authentication across all services; centralized user management"
+    - "Implemented automated backup strategy with 7-day retention for artifact repository"
+    - "Documented complete setup process enabling team onboarding in under 1 hour"
+  tech:
+    - Docker
+    - Jenkins
+    - SonarQube
+    - Nexus
+    - GitLab
+    - Nginx
+  githubUrl: "https://github.com/ibtisam-iq/ci-cd-stack"
+  featured: true
+
+- slug: custom-ubuntu-rootfs
+  title: "Custom Ubuntu Rootfs"
+  category: production-grade
+  status: completed
+  shortDescription: "Minimal Ubuntu base filesystem optimized for container workloads. 40% smaller than official images with security-hardened configuration."
+  description: "Custom-built Ubuntu root filesystem for containerized applications. Focused on minimal attack surface and optimal layer caching for CI/CD pipelines."
+  highlights:
+    - "Built minimal Ubuntu rootfs from debootstrap; reduced image size from 180MB to 110MB"
+    - "Removed 47 unnecessary packages while maintaining essential utilities"
+    - "Configured automatic security updates via unattended-upgrades"
+    - "Implemented multi-stage Docker build pattern for optimal layer caching"
+    - "Published to GitHub Container Registry with automated versioning"
+  tech:
+    - Docker
+    - Ubuntu
+    - Bash
+    - GitHub Actions
+  githubUrl: "https://github.com/ibtisam-iq/custom-ubuntu-rootfs"
+  featured: false

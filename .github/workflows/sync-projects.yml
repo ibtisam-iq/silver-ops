@@ -1,0 +1,18 @@
+name: Sync Projects Site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/projects.yaml'
+
+jobs:
+  trigger-projects-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger projects site rebuild
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PROJECTS_PAT }}
+          repository: ibtisam-iq/projects
+          event-type: projects-data-updated
