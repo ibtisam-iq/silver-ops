@@ -80,7 +80,7 @@
     - "Configured Jenkins shared libraries for DRY pipeline code; reduced pipeline duplication by 70%"
     - "Integrated LDAP authentication across all services; centralized user management"
     - "Implemented automated backup strategy with 7-day retention for artifact repository"
-    - "Documented complete setup process enabling team onboarding in under 1 hour"
+    - "Documented complete setup process enabling team onboarding in under 1 hour" 
   tech:
     - Docker
     - Jenkins
