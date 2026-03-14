@@ -1,110 +1,81 @@
-# 🥈 SilverOps
+# silver-ops
 
-> DevOps Portfolio by **Muhammad Ibtisam** | Silver Medalist
+> Personal ops control plane for [ibtisam-iq.com](https://ibtisam-iq.com) and its sub-sites.
 
-A curated showcase of production-grade DevOps projects, tools, and achievements.
-
-## 🏆 Featured Projects
-
-### 🐛 [DebugBox](https://github.com/ibtisam-iq/debugbox)
-> Multi-variant Docker debugging toolkit with 80+ networking and system tools
-
-**Problem Solved:** Debug containerized applications without bloating production images
-
-**Highlights:**
-
-- 5 size variants (tiny → full)
-- Published to GHCR and Docker Hub
-- Production-grade CI/CD
-- Used in real-world environments
-
-**Tech Stack:** Docker, GitHub Actions, Multi-stage builds, Shell scripting
-
-**Status:** ✅ Active development
+This repository is the **single source of truth** for all content and data that drives Muhammad Ibtisam's public-facing sites. It holds no application code — only structured data that other repositories consume at build time.
 
 ---
 
-### 🛠️ [SilverStack](https://github.com/ibtisam-iq/silver-stack)
-> Production-grade DevOps toolkit
+## Why This Exists
 
-**Purpose:** Daily-use infrastructure toolkit with production configs and automation
+Sites like [projects.ibtisam-iq.com](https://projects.ibtisam-iq.com) are built with React. Without this repo, adding a new project would mean editing TypeScript source code, committing to the app repo, and triggering a rebuild — every single time.
 
-**Contains:**
+`silver-ops` eliminates that. You edit a YAML file here. Everything else is automatic.
 
-- Kubernetes manifests (CKA/CKAD reference)
-- Docker Compose stacks (Jenkins, monitoring, logging)
-- GitHub Actions workflows (iximiuz playground keeper)
-- Troubleshooting case studies (50+ documented fixes)
-- Rapid provisioning scripts
-
-**Highlights:**
-
-- Professional structure and documentation
-- Industry-standard practices
-- Continuously updated
-
-**Docs:** [bootstrap.ibtisam-iq.com](https://bootstrap.ibtisam-iq.com)
+This is the same principle as MkDocs — **content and code are completely decoupled**.
 
 ---
 
-### 📚 [Nectar](https://github.com/ibtisam-iq/nectar)
-> Personal engineering knowledge base
+## How It Works
 
-**Purpose:** Comprehensive DevOps documentation and learning resources
-
-**Live Site:** [nectar.ibtisam-iq.com](https://nectar.ibtisam-iq.com)
-
-**Contains:**
-- Tool guides and cheat sheets
-- Best practices documentation
-- Architecture diagrams
-- Technical notes and references
-
----
-
-## 🎓 Certifications
-
-- **CKA** - Certified Kubernetes Administrator
-- **CKAD** - Certified Kubernetes Application Developer
-
-## 🏅 Achievements
-
-- 🥈 **Silver Medalist**
-- ⭐ Open-source contributor
-- 📝 Technical writer
-
-## 💼 Technical Expertise
-
-**Cloud & Infrastructure:**
-
-- AWS, GCP, Azure
-- Terraform, CloudFormation
-- Infrastructure as Code
-
-**Containers & Orchestration:**
-
-- Docker, Kubernetes
-- Helm, Kustomize
-- Service mesh (Istio, Linkerd)
-
-**CI/CD & Automation:**
-
-- Jenkins, GitHub Actions
-- GitLab CI, ArgoCD
-- Bash, Python scripting
-
-**Monitoring & Logging:**
-
-- Prometheus, Grafana
-- ELK Stack
-- CloudWatch, Datadog
-
-## 🌐 Online Presence
-
-- 🌍 [Website](https://ibtisam-iq.com)
-- 💼 [LinkedIn](https://linkedin.com/in/ibtisam-iq)
-- 📧 [Email](contact@ibtisam-iq.com)
+```
+You edit data/projects.yaml
+        ↓
+GitHub Actions detects the change (path filter)
+        ↓
+Fires a repository_dispatch to ibtisam-iq/projects
+        ↓
+projects site fetches this YAML, generates TypeScript, builds, deploys
+        ↓
+projects.ibtisam-iq.com is live with your update (~2 min)
+```
 
 ---
 
-**Built with 🥈 by Muhammad Ibtisam**
+## Repository Structure
+
+```
+silver-ops/
+├── data/
+│   └── projects.yaml        ← edit this to add/update projects
+├── .github/
+│   └── workflows/
+│       └── sync-projects.yml    ← triggers projects site rebuild
+├── AI/                      ← AI tooling notes and configs
+├── DevOps/                  ← DevOps reference material
+└── README.md
+```
+
+---
+
+## To Add a New Project
+
+1. Open `data/projects.yaml`
+2. Append a new entry
+3. `git commit -m "feat: add project-name" && git push`
+
+Done. The projects site rebuilds and deploys automatically.
+
+See the full YAML schema and field reference in [`ibtisam-iq/projects → docs/architecture.md`](https://github.com/ibtisam-iq/projects/blob/main/docs/architecture.md).
+
+---
+
+## Secrets Required
+
+| Secret | Purpose |
+|---|---|
+| `PROJECTS_PAT` | Allows `sync-projects.yml` to trigger a rebuild in `ibtisam-iq/projects` |
+
+---
+
+## Related Repositories
+
+| Repository | Purpose |
+|---|---|
+| [`projects`](https://github.com/ibtisam-iq/projects) | React app — consumes `data/projects.yaml` |
+| [`portfolio-site`](https://github.com/ibtisam-iq/portfolio-site) | Main portfolio at `ibtisam-iq.com` |
+| [`nectar`](https://github.com/ibtisam-iq/nectar) | Docs site at `nectar.ibtisam-iq.com` |
+
+---
+
+**Muhammad Ibtisam** — [ibtisam-iq.com](https://ibtisam-iq.com) · [LinkedIn](https://linkedin.com/in/ibtisam-iq) · [GitHub](https://github.com/ibtisam-iq)
