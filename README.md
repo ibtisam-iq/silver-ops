@@ -1,3 +1,10 @@
+> ⚠️ **Archived** — This repository has been retired.
+> `data/projects.yaml` has been migrated directly into
+> [`ibtisam-iq/projects`](https://github.com/ibtisam-iq/projects/blob/main/data/projects.yaml).
+> This repo is kept for historical reference only.
+
+
+
 # silver-ops
 
 > Personal ops control plane for [ibtisam-iq.com](https://ibtisam-iq.com) and its sub-sites.
