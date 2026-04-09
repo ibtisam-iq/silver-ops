@@ -27,7 +27,30 @@
   githubUrl: "https://github.com/ibtisam-iq/BankingApp-Java-MySQL"
   blogUrl: "https://blog.ibtisam-iq.com/bankingapp-deployment"
   featured: true
-
+- slug: bankingapp-java-mysql-copy
+  title: "BankingApp Java MySQLL"
+  category: production-grade
+  status: completed
+  shortDescription: "2-tier Spring Boot banking application with full CI/CD pipeline, SonarQube quality gates, and Nexus artifact management."
+  description: "Production-grade deployment of a Spring Boot banking application demonstrating complete DevOps lifecycle from source to deployment. Implemented Jenkins CI/CD pipeline with SonarQube code quality enforcement and Nexus artifact repository integration."
+  highlights:
+    - "Containerized multi-tier Java application; reduced environment setup from 2 hours to `docker compose up`"
+    - "Implemented SonarQube quality gate blocking deployment on critical vulnerabilities"
+    - "Automated artifact versioning via Nexus; eliminated manual JAR management"
+    - "Configured Jenkins pipeline with parallel stages reducing build time by 40%"
+    - "Deployed on Kubernetes with Horizontal Pod Autoscaling based on CPU metrics"
+  tech:
+    - Docker
+    - Jenkins
+    - SonarQube
+    - Nexus
+    - MySQL
+    - Kubernetes
+    - Spring Boot
+  githubUrl: "https://github.com/ibtisam-iq/BankingApp-Java-MySQL"
+  blogUrl: "https://blog.ibtisam-iq.com/bankingapp-deployment"
+  featured: true
+  
 - slug: debugbox
   title: "DebugBox"
   category: open-source
